@@ -11,10 +11,6 @@ public class Accounts {
         this.scanner = scanner;
 
     }
-
-
-
-
     public long open_account(String email){
         if(!account_exist(email)) {
             String open_account_query = "INSERT INTO Accounts(account_number, full_name, email, balance, security_pin) VALUES(?, ?, ?, ?, ?)";
